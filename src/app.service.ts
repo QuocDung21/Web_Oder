@@ -3,10 +3,10 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World!';
+    return process.env.URL_CONNECT_MONGODB;
   }
 
   getTest(): string {
-    return 'Test';
+    return process.env.URL_CONNECT_MONGODB;
   }
 }
